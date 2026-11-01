@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520">
+<style>
+.rock{transform-origin:320px 306px;transform:rotate(-8deg);animation:rock 3.2s ease-in-out 2}
+@keyframes rock{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){.rock{animation:none}}
+</style>
+<defs>
+<g id="tuft"><path d="M0 0L-4-16L2-6L6-18L8 0Z" fill="#4F7F3A"/></g><g id="bloom"><rect x="-1.5" y="0" width="3" height="16" rx="1.5" fill="#4F7F3A"/><circle cx="-5" cy="-1" r="4.5" fill="#fff"/><circle cx="5" cy="-1" r="4.5" fill="#fff"/><circle cx="0" cy="-6" r="4.5" fill="#fff"/><circle cx="0" cy="4" r="4.5" fill="#fff"/><circle cx="0" cy="-1" r="3.5" fill="#F5CD4F"/></g>
+</defs>
+<ellipse cx="320" cy="468" rx="290" ry="34" fill="#203044" opacity=".12"/>
+<path d="M40 410V438C40 466 160 486 320 486S600 466 600 438V410Z" fill="#4F7F3A"/>
+<ellipse cx="320" cy="410" rx="280" ry="58" fill="#8CBF73"/>
+<ellipse cx="320" cy="404" rx="252" ry="48" fill="#75A85C"/>
+<g transform="translate(320 408) scale(1.16) translate(-320 -408)">
+<circle cx="98" cy="388" r="27" fill="#12477F"/>
+<circle cx="98" cy="388" r="18" fill="#1769C2"/>
+<circle cx="98" cy="388" r="8" fill="#12477F"/>
+<path d="M270 418L320 312L370 418Z" fill="#1769C2"/>
+<path d="M320 312L370 418H320Z" fill="#12477F"/>
+<path d="M300 400L320 358L340 400Z" fill="#FFF8EF" opacity=".0"/>
+<rect x="258" y="408" width="124" height="16" rx="8" fill="#12477F"/>
+<rect x="258" y="408" width="124" height="6" rx="3" fill="#1769C2"/>
+<g class="rock">
+<rect x="92" y="306" width="456" height="24" rx="12" fill="#B9543F"/>
+<rect x="92" y="296" width="456" height="24" rx="12" fill="#E9816D"/>
+<rect x="108" y="300" width="424" height="5" rx="2.5" fill="#F4A898"/>
+<rect x="128" y="276" width="88" height="22" rx="9" fill="#B8890F"/>
+<rect x="128" y="272" width="88" height="20" rx="9" fill="#F5CD4F"/>
+<rect x="138" y="275" width="68" height="4" rx="2" fill="#FBE79A"/>
+<rect x="424" y="276" width="88" height="22" rx="9" fill="#B8890F"/>
+<rect x="424" y="272" width="88" height="20" rx="9" fill="#F5CD4F"/>
+<rect x="434" y="275" width="68" height="4" rx="2" fill="#FBE79A"/>
+<path d="M232 298V252H262V298" fill="none" stroke="#12477F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M232 298V252H262V298" fill="none" stroke="#1769C2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 -1)"/>
+<path d="M378 298V252H408V298" fill="none" stroke="#12477F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M378 298V252H408V298" fill="none" stroke="#1769C2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 -1)"/>
+<rect x="292" y="318" width="56" height="14" rx="5" fill="#12477F"/>
+</g>
+<circle cx="320" cy="312" r="15" fill="#B8890F"/>
+<circle cx="320" cy="309" r="15" fill="#F5CD4F"/>
+<circle cx="320" cy="309" r="6" fill="#B8890F"/>
+</g>
+<use href="#tuft" x="60" y="420"/><use href="#tuft" x="74" y="426"/><use href="#tuft" x="566" y="424"/><use href="#tuft" x="580" y="418"/>
+<use href="#bloom" x="190" y="446"/><use href="#bloom" x="456" y="450"/>
+<circle cx="530" cy="440" r="15" fill="#1769C2"/><path d="M516 440A15 15 0 0 1 544 440" fill="#fff" opacity=".4"/>
+</svg>

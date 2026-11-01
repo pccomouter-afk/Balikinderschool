@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fasilitas dan Lingkungan | Bali Global Kinder School</title>
+    <meta
+      name="description"
+      content="Panduan melihat lingkungan belajar Bali Global Kinder School: daftar pertanyaan kunjungan dan galeri fasilitas resmi saat tersedia."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bali Global Kinder School" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:title"
+      content="Fasilitas dan Lingkungan | Bali Global Kinder School"
+    />
+    <meta
+      property="og:description"
+      content="Panduan melihat lingkungan belajar Bali Global Kinder School: daftar pertanyaan kunjungan dan galeri fasilitas resmi saat tersedia."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8EF" />
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body data-page="fasilitas">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <div id="navbar-root"></div>
+    <main id="konten">
+      <section class="fac-hero" aria-labelledby="judul-halaman">
+        <div class="container fac-hero__grid">
+          <div class="fac-hero__copy">
+            <p class="eyebrow">Fasilitas dan lingkungan</p>
+            <h1 id="judul-halaman">
+              Lingkungan belajar yang nyaman untuk anak.
+            </h1>
+            <p class="lead">
+              Halaman ini membantu orang tua menyiapkan kunjungan dan mengenali
+              lingkungan belajar dengan jujur. Foto fasilitas resmi akan
+              menggantikan ilustrasi setelah tersedia.
+            </p>
+            <a class="btn btn--primary btn--go" href="#judul-daftar"
+              >Siapkan daftar kunjungan</a
+            >
+          </div>
+          <div class="plan" data-stage>
+            <div
+              class="plan__board"
+              role="group"
+              aria-label="Ilustrasi konsep area: pilih satu area"
+            >
+              <span class="plan__path" aria-hidden="true"></span>
+              <button
+                class="zone zone--belajar"
+                type="button"
+                data-zone="belajar"
+                aria-pressed="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"
+                  /></svg
+                ><span>Ruang belajar</span></button
+              ><button
+                class="zone zone--bermain"
+                type="button"
+                data-zone="bermain"
+                aria-pressed="false"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 2" /></svg
+                ><span>Area bermain</span></button
+              ><button
+                class="zone zone--aman"
+                type="button"
+                data-zone="aman"
+                aria-pressed="false"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z" /></svg
+                ><span>Keamanan</span></button
+              ><button
+                class="zone zone--nyaman"
+                type="button"
+                data-zone="nyaman"
+                aria-pressed="false"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"
+                  /></svg
+                ><span>Kenyamanan</span>
+              </button>
+            </div>
+            <div class="plan__panel" aria-live="polite">
+              <p class="plan__kicker">Yang baik diperhatikan</p>
+              <h2 class="plan__title" id="plan-title"></h2>
+              <p class="plan__text" id="plan-text"></p>
+              <p class="plan__label">Pertanyaan terkait untuk dibawa</p>
+              <ul class="plan__qs" id="plan-qs"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section--tight"
+        id="facility-gallery-section"
+        aria-labelledby="judul-galeri-fasilitas"
+      >
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Galeri</p>
+            <h2 id="judul-galeri-fasilitas">Potret lingkungan sekolah.</h2>
+          </div>
+          <div class="fgal" id="facility-gallery"></div>
+          <p class="caption fgal__note">
+            Gambar adalah ilustrasi konsep, bukan dokumentasi asli fasilitas
+            BGKS.
+          </p>
+        </div>
+      </section>
+      <section class="section panel" aria-labelledby="judul-daftar">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Daftar kunjungan</p>
+            <h2 id="judul-daftar">Pertanyaan untuk dibawa saat berkunjung.</h2>
+            <p class="lead">
+              Pilih pertanyaan yang penting bagimu, lalu salin daftarnya.
+            </p>
+          </div>
+          <ul
+            class="checklist"
+            id="visit-list"
+            aria-label="Pertanyaan kunjungan"
+          ></ul>
+          <div class="checklist__bar">
+            <span
+              class="checklist__count"
+              id="visit-count"
+              aria-live="polite"
+            ></span
+            ><button class="btn btn--primary" type="button" id="visit-copy">
+              Salin Daftar</button
+            ><a
+              class="btn btn--ghost"
+              id="visit-wa"
+              target="_blank"
+              rel="noopener"
+              href="kontak.html"
+              >Bagikan via WhatsApp</a
+            ><button class="btn btn--ghost" type="button" id="visit-pdf">
+              Unduh PDF</button
+            ><a class="btn btn--yellow" href="jadwalkan-kunjungan.html"
+              >Rencanakan Kunjungan</a
+            >
+          </div>
+          <p class="checklist__status" id="visit-status" aria-live="polite"></p>
+        </div>
+      </section>
+      <section class="section--tight before-footer" aria-labelledby="judul-cta">
+        <div class="container cta" data-reveal>
+          <div>
+            <h2 id="judul-cta">Mari kenali sekolah lebih dekat.</h2>
+            <p>
+              Lihat alur pendaftaran, lalu sampaikan pertanyaanmu kepada pihak
+              sekolah.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--yellow" href="pendaftaran.html"
+              >Informasi Pendaftaran</a
+            ><a
+              class="btn btn--ghost-light"
+              data-wa
+              target="_blank"
+              rel="noopener"
+              hidden
+              >Chat WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-root"></div>
+    <div id="chatbot-root"></div>
+  </body>
+</html>

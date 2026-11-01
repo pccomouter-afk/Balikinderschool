@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalender | Bali Global Kinder School</title>
+    <meta
+      name="description"
+      content="Kalender contoh agenda dan pengumuman sekolah Bali Global Kinder School dengan navigasi bulan dan filter kategori."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bali Global Kinder School" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="Kalender | Bali Global Kinder School" />
+    <meta
+      property="og:description"
+      content="Kalender contoh agenda dan pengumuman sekolah Bali Global Kinder School dengan navigasi bulan dan filter kategori."
+    />
+    <meta property="og:image" content="../assets/images/logo.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8EF" />
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link
+      rel="preload"
+      href="../assets/fonts/outfit-bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../assets/fonts/dmsans-var.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body data-page="kalender">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <div id="navbar-root"></div>
+    <main id="konten">
+      <section class="page-top cal-hero" aria-labelledby="judul-halaman">
+        <div class="container">
+          <p class="eyebrow" data-en="Calendar">Kalender</p>
+          <h1 id="judul-halaman" data-en="School agenda and announcements.">
+            Agenda dan pengumuman sekolah.
+          </h1>
+          <p
+            class="lead"
+            data-en="A sample calendar to show the design. Dates on this page are demonstration data, not BGKS&#x27;s official academic schedule."
+          >
+            Contoh kalender untuk memperlihatkan desain. Tanggal pada halaman
+            ini adalah data demonstrasi, bukan jadwal akademik resmi BGKS.
+          </p>
+        </div>
+      </section>
+      <section class="section--tight before-footer">
+        <div class="container cal">
+          <div class="cal__main">
+            <div class="cal__bar">
+              <button
+                class="chip"
+                type="button"
+                id="cal-prev"
+                aria-label="Bulan sebelumnya"
+              >
+                &lsaquo;
+              </button>
+              <h2 id="cal-title" aria-live="polite"></h2>
+              <button
+                class="chip"
+                type="button"
+                id="cal-next"
+                aria-label="Bulan berikutnya"
+              >
+                &rsaquo;
+              </button>
+            </div>
+            <div
+              class="cal__filters"
+              id="cal-filters"
+              role="group"
+              aria-label="Filter kategori"
+            ></div>
+            <div
+              class="cal__grid"
+              id="cal-grid"
+              role="grid"
+              aria-labelledby="cal-title"
+            ></div>
+          </div>
+          <aside class="cal__side">
+            <h3 id="cal-side-title"></h3>
+            <ul class="cal__list" id="cal-list"></ul>
+            <div class="empty" id="cal-empty" hidden>
+              <p class="muted">Tidak ada acara pada bulan ini.</p>
+            </div>
+            <div class="cal__detail" id="cal-detail" aria-live="polite"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div id="footer-root"></div>
+    <div id="chatbot-root"></div>
+  </body>
+</html>

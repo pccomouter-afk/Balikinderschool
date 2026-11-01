@@ -1,0 +1,47 @@
+.legal-hero {
+  padding-bottom: var(--space-6);
+}
+.legal-hero .container {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: start;
+}
+.legal {
+  display: grid;
+  gap: var(--space-8);
+}
+.legal article {
+  display: grid;
+  gap: var(--space-2);
+  padding-top: var(--space-6);
+  border-top: 2px solid var(--color-line);
+}
+.legal h2 {
+  font-size: 1.5rem;
+}
+.legal p {
+  margin: 0;
+  color: var(--color-ink-muted);
+  max-width: 68ch;
+}
+.nf {
+  text-align: center;
+}
+.nf__inner {
+  display: grid;
+  gap: var(--space-5);
+  justify-items: center;
+}
+.nf__inner img {
+  width: min(100%, 320px);
+  height: auto;
+}
+.nf h1 {
+  max-width: 18ch;
+}
+.nf__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}

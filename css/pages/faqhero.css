@@ -1,0 +1,122 @@
+.faq-hero {
+  padding-top: calc(var(--nav-height) + 52px);
+  padding-bottom: var(--space-8);
+}
+.faq-hero__inner {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: start;
+}
+.faq-hero h1 {
+  font-size: clamp(2.25rem, 1.3rem + 2.8vw, 3.75rem);
+  max-width: 18ch;
+  margin-bottom: var(--space-2);
+}
+.faq-search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  width: min(100%, 640px);
+}
+.faq-search input {
+  flex: 1 1 320px;
+  min-height: 56px;
+  padding: 0 var(--space-6);
+  border: 2px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  font: inherit;
+  color: var(--color-ink);
+  transition:
+    border-color var(--dur-hover) var(--ease),
+    box-shadow var(--dur-hover) var(--ease);
+}
+.faq-search input:hover {
+  border-color: var(--color-blue);
+}
+.faq-search input:focus-visible {
+  outline: 3px solid var(--color-blue-deep);
+  outline-offset: 2px;
+  border-color: var(--color-blue);
+}
+.faq-search__count {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  color: var(--color-blue-deep);
+}
+.faq-nav {
+  margin-top: var(--space-1);
+}
+.faq-group[hidden],
+.accordion__item[hidden] {
+  display: none;
+}
+.contact-hero {
+  padding-top: calc(var(--nav-height) + 52px);
+  padding-bottom: var(--space-8);
+}
+.contact-hero__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.contact-hero h1 {
+  font-size: clamp(2.25rem, 1.3rem + 2.8vw, 3.75rem);
+  max-width: 14ch;
+  margin-bottom: var(--space-3);
+}
+.contact-hero .lead {
+  max-width: 52ch;
+}
+.logo-ring {
+  position: relative;
+}
+.pin {
+  position: absolute;
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  background: var(--color-yellow);
+  color: var(--color-blue-deep);
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--dur-hover) var(--ease-out);
+  animation: pin-bob 4.5s ease-in-out infinite alternate;
+}
+.pin--1 {
+  left: -4%;
+  top: 12%;
+}
+.pin--2 {
+  right: -6%;
+  top: 44%;
+  background: var(--color-coral, #e9816d);
+  color: #fff;
+  animation-delay: -1.5s;
+}
+.pin--3 {
+  left: 6%;
+  bottom: 6%;
+  background: var(--color-green, #75a85c);
+  color: #fff;
+  animation-delay: -3s;
+}
+@keyframes pin-bob {
+  to {
+    transform: translateY(-8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pin {
+    animation: none;
+  }
+}
+.faq-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}

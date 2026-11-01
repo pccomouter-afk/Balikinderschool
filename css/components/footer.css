@@ -1,0 +1,103 @@
+.footer {
+  position: relative;
+  background: var(--color-blue-deep);
+  color: var(--color-on-blue);
+  padding-block: var(--space-20) var(--space-8);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  margin-top: calc(var(--space-12) * -1);
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.9fr 1.2fr;
+  gap: var(--space-12);
+}
+.footer__brand {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  color: #fff;
+  font-weight: var(--fw-semibold);
+  line-height: 1.15;
+}
+.footer__brand img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.footer__tag {
+  margin-top: var(--space-6);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-yellow);
+}
+.footer h2 {
+  font-size: 1rem;
+  color: var(--color-yellow);
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.02em;
+}
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer li a {
+  display: inline-block;
+  padding-block: var(--space-1);
+}
+.footer__note {
+  margin-top: var(--space-3);
+  max-width: 36ch;
+  font-size: var(--fs-caption);
+  line-height: 1.6;
+}
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: space-between;
+  margin-top: var(--space-12);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: var(--fs-caption);
+}
+@media (max-width: 800px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .footer {
+    padding-top: var(--space-16);
+  }
+}
+.footer__addr {
+  font-style: normal;
+  margin-bottom: var(--space-3);
+  max-width: 32ch;
+  line-height: 1.6;
+}
+@media (max-width: 1060px) and (min-width: 801px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer__bottom p {
+  margin: 0;
+}
+.footer__legal {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: var(--space-6) !important;
+}

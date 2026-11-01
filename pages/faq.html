@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pertanyaan Umum | Bali Global Kinder School</title>
+    <meta
+      name="description"
+      content="Pertanyaan yang sering diajukan orang tua tentang program, pendaftaran, fasilitas, kunjungan, dan kontak Bali Global Kinder School."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bali Global Kinder School" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:title"
+      content="Pertanyaan Umum | Bali Global Kinder School"
+    />
+    <meta
+      property="og:description"
+      content="Pertanyaan yang sering diajukan orang tua tentang program, pendaftaran, fasilitas, kunjungan, dan kontak Bali Global Kinder School."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8EF" />
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body data-page="faq">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <div id="navbar-root"></div>
+    <main id="konten">
+      <section class="faq-hero" aria-labelledby="judul-halaman">
+        <div class="container faq-hero__inner">
+          <p class="eyebrow">FAQ</p>
+          <h1 id="judul-halaman">Pertanyaan yang sering muncul.</h1>
+          <p class="lead">
+            Jawaban dibatasi pada informasi yang tersedia. Untuk hal lain, kami
+            mengarahkan ke pihak sekolah.
+          </p>
+          <form class="faq-search" role="search" onsubmit="return false;">
+            <label class="sr-only" for="faq-q">Cari pertanyaan</label
+            ><input
+              id="faq-q"
+              type="search"
+              placeholder="Cari pertanyaan, misalnya: biaya"
+              autocomplete="off"
+            /><span
+              class="faq-search__count"
+              id="faq-count"
+              aria-live="polite"
+            ></span>
+          </form>
+          <div
+            class="faq-nav"
+            id="faq-nav"
+            role="group"
+            aria-label="Kelompok pertanyaan"
+          ></div>
+        </div>
+      </section>
+      <section class="section--tight before-footer">
+        <div class="container container--narrow">
+          <div class="faq-groups" id="faq-groups"></div>
+          <div class="empty" id="faq-empty" hidden>
+            <h3>Tidak ada pertanyaan yang cocok.</h3>
+            <p class="muted">
+              Coba kata lain atau tanyakan langsung kepada sekolah.
+            </p>
+            <button class="btn btn--ghost" type="button" id="faq-reset">
+              Atur ulang pencarian
+            </button>
+          </div>
+          <div class="note note--spaced">
+            <p>
+              Belum menemukan jawabannya?
+              <a data-wa target="_blank" rel="noopener">Tanya lewat WhatsApp</a>
+              atau lihat <a href="kontak.html">Kontak dan Lokasi</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-root"></div>
+    <div id="chatbot-root"></div>
+  </body>
+</html>

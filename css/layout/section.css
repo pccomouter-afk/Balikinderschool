@@ -1,0 +1,28 @@
+.section {
+  position: relative;
+  padding-block: var(--space-24);
+}
+.section--tight {
+  position: relative;
+  padding-block: var(--space-16);
+}
+.section--pale {
+  background: var(--color-blue-pale);
+}
+.section--white {
+  background: var(--color-white);
+}
+.page-top {
+  padding-top: calc(var(--nav-height) + 72px);
+}
+@media (max-width: 700px) {
+  .section {
+    padding-block: var(--space-16);
+  }
+  .section--tight {
+    padding-block: var(--space-12);
+  }
+  .page-top {
+    padding-top: calc(var(--nav-height) + 40px);
+  }
+}

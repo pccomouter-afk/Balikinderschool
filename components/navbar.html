@@ -1,0 +1,110 @@
+<header class="nav" id="site-nav">
+  <a
+    class="nav__brand"
+    href="index.html"
+    aria-label="Bali Global Kinder School, beranda"
+    ><img src="assets/images/logo.jpg" alt="" width="44" height="44" /><span
+      >Bali Global<br />Kinder School</span
+    ></a
+  >
+  <nav class="nav__menu" id="nav-menu" aria-label="Navigasi utama">
+    <a class="nav__link" data-nav="index" href="index.html">Beranda</a>
+    <a class="nav__link" data-nav="tentang" href="pages/tentang.html"
+      >Tentang</a
+    >
+    <a
+      class="nav__link"
+      data-nav="program-belajar"
+      href="pages/program-belajar.html"
+      >Program</a
+    >
+    <div class="nav__drop" data-drop>
+      <button
+        class="nav__link nav__drop-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-sub"
+        aria-haspopup="true"
+      >
+        Jelajahi<svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+      <ul class="nav__sub" id="nav-sub">
+        <li>
+          <a data-nav="dunia-bermain" href="pages/dunia-bermain.html"
+            ><span class="nav__sub-t">Dunia Bermain</span
+            ><span class="nav__sub-d">Delapan permainan dan manfaatnya</span></a
+          >
+        </li>
+        <li>
+          <a data-nav="fasilitas" href="pages/fasilitas.html"
+            ><span class="nav__sub-t">Fasilitas</span
+            ><span class="nav__sub-d"
+              >Lingkungan belajar dan daftar kunjungan</span
+            ></a
+          >
+        </li>
+        <li>
+          <a data-nav="kehidupan-sekolah" href="pages/kehidupan-sekolah.html"
+            ><span class="nav__sub-t">Kehidupan Sekolah</span
+            ><span class="nav__sub-d">Gambaran keseharian anak</span></a
+          >
+        </li>
+        <li>
+          <a data-nav="faq" href="pages/faq.html"
+            ><span class="nav__sub-t">FAQ</span
+            ><span class="nav__sub-d">Pertanyaan yang sering muncul</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <a class="nav__link" data-nav="berita" href="pages/berita.html">Berita</a>
+    <a class="nav__link" data-nav="kontak" href="pages/kontak.html">Kontak</a>
+    <div class="lang" role="group" aria-label="Pilih bahasa">
+      <button
+        class="lang__btn"
+        type="button"
+        data-lang-set="id"
+        aria-pressed="true"
+        lang="id"
+        aria-label="Bahasa Indonesia"
+      >
+        ID</button
+      ><span class="lang__sep" aria-hidden="true">|</span
+      ><button
+        class="lang__btn"
+        type="button"
+        data-lang-set="en"
+        aria-pressed="false"
+        lang="en"
+        aria-label="English"
+      >
+        EN
+      </button>
+    </div>
+    <a
+      class="btn btn--primary btn--sm nav__cta"
+      data-nav="pendaftaran"
+      href="pages/pendaftaran.html"
+      >Info Pendaftaran</a
+    >
+  </nav>
+  <button
+    class="nav__toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="nav-menu"
+    aria-label="Buka menu"
+  >
+    <span></span><span></span><span></span>
+  </button>
+</header>
