@@ -1,0 +1,54 @@
+.float3d {
+  position: absolute;
+  pointer-events: none;
+  z-index: var(--z-raised);
+}
+.float3d canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+}
+.float3d.is-ready canvas {
+  opacity: 1;
+}
+.float3d--home {
+  inset: -4% -8%;
+}
+.float3d > img {
+  position: absolute;
+  inset: 4% 8%;
+  width: 84%;
+  height: 92%;
+  object-fit: contain;
+}
+.squiggle {
+  width: min(240px, 60%);
+  height: auto;
+  color: var(--color-yellow);
+  overflow: visible;
+}
+.squiggle path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.1s var(--ease-out);
+}
+.squiggle.is-drawn path {
+  stroke-dashoffset: 0;
+}
+.hero-scene .float3d {
+  z-index: 4;
+}
+@media (prefers-reduced-motion: reduce) {
+  .squiggle path {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+}

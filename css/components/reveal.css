@@ -1,0 +1,7 @@
+.js-reveal [data-reveal] {
+  transform: translateY(20px);
+  transition: transform var(--dur-slow) var(--ease-out) var(--reveal-delay, 0ms);
+}
+.js-reveal [data-reveal].is-visible {
+  transform: none;
+}

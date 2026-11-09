@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" width="520" height="400">
+<rect width="520" height="400" rx="40" fill="#E8F2FC"/>
+<circle cx="408" cy="86" r="40" fill="#F5CD4F"/>
+<path d="M60 120c0-22 18-34 38-30 6-18 34-22 46-6 22-4 36 10 34 26z" fill="#fff"/>
+<ellipse cx="260" cy="372" rx="260" ry="60" fill="#75A85C"/>
+<ellipse cx="120" cy="330" rx="170" ry="60" fill="#93C27B"/>
+<path d="M190 400C220 340 250 320 290 296c30-18 60-30 74-60" stroke="#FDF1C9" stroke-width="30" fill="none" stroke-linecap="round"/>
+<path d="M190 400C220 340 250 320 290 296c30-18 60-30 74-60" stroke="#F5CD4F" stroke-width="4" fill="none" stroke-dasharray="2 14" stroke-linecap="round"/>
+<g transform="translate(402 150)"><rect x="-8" y="60" width="16" height="50" rx="6" fill="#B9543F"/><circle cx="0" cy="40" r="44" fill="#4F7F3A"/><circle cx="-14" cy="30" r="30" fill="#75A85C"/></g>
+<g transform="translate(78 220)"><rect x="-6" y="40" width="12" height="40" rx="5" fill="#B9543F"/><circle cx="0" cy="26" r="32" fill="#75A85C"/></g>
+<path d="M300 150c0-26 20-44 44-44s44 18 44 44c0 30-44 70-44 70s-44-40-44-70z" fill="#E9816D"/>
+<circle cx="344" cy="150" r="16" fill="#fff"/>
+</svg>

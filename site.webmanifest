@@ -1,0 +1,14 @@
+{
+"name": "Bali Global Kinder School",
+"short_name": "BGKS",
+"description": "Early childhood school in Dalung, Badung, Bali. Learn, Play, Grow.",
+"start_url": "./index.html",
+"scope": "./",
+"display": "standalone",
+"background_color": "#FFF8EF",
+"theme_color": "#FFF8EF",
+"lang": "id",
+"icons": [
+{"src": "assets/images/logo.jpg", "sizes": "772x773", "type": "image/jpeg", "purpose": "any"}
+]
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jadwalkan Kunjungan | Bali Global Kinder School</title>
+    <meta
+      name="description"
+      content="Pilih tanggal dan slot kunjungan ke Bali Global Kinder School, lalu lanjutkan ke WhatsApp dengan pesan yang sudah terisi."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bali Global Kinder School" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:title"
+      content="Jadwalkan Kunjungan | Bali Global Kinder School"
+    />
+    <meta
+      property="og:description"
+      content="Pilih tanggal dan slot kunjungan ke Bali Global Kinder School, lalu lanjutkan ke WhatsApp dengan pesan yang sudah terisi."
+    />
+    <meta property="og:image" content="../assets/images/logo.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8EF" />
+    <script>
+      try {
+        if (!sessionStorage.getItem("bgks-intro-seen"))
+          document.documentElement.classList.add("has-intro", "intro-lock");
+      } catch (err) {}
+    </script>
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link
+      rel="preload"
+      href="../assets/fonts/outfit-bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../assets/fonts/dmsans-var.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body data-page="jadwalkan-kunjungan">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <div id="navbar-root"></div>
+    <main id="konten">
+      <section class="page-top visit-hero" aria-labelledby="judul-halaman">
+        <div class="container visit-hero__inner">
+          <div>
+            <p class="eyebrow" data-en="Schedule a visit">
+              Jadwalkan kunjungan
+            </p>
+            <h1 id="judul-halaman" data-en="See the school in person.">
+              Lihat sekolah secara langsung.
+            </h1>
+            <p
+              class="lead"
+              data-en="Pick a date and time slot, add your contact, then continue to WhatsApp. The slots on this page are demonstration samples."
+            >
+              Pilih tanggal dan slot waktu, isi kontak, lalu lanjutkan ke
+              WhatsApp. Slot pada halaman ini adalah contoh demonstrasi.
+            </p>
+          </div>
+          <ol class="visit-steps" aria-label="Langkah">
+            <li><span data-en="Date">Tanggal</span></li>
+            <li><span data-en="Time">Waktu</span></li>
+            <li><span data-en="Contact">Kontak</span></li>
+            <li><span data-en="Summary">Ringkasan</span></li>
+          </ol>
+        </div>
+      </section>
+      <section class="section--tight before-footer">
+        <div class="container">
+          <div id="visit-root" class="visit"></div>
+          <p
+            class="caption visit__fine"
+            data-en="No booking is recorded automatically. The schedule is only final once the school confirms it on WhatsApp."
+          >
+            Tidak ada pemesanan yang tercatat otomatis. Jadwal baru dianggap
+            pasti setelah sekolah mengonfirmasi lewat WhatsApp.
+          </p>
+        </div>
+      </section>
+    </main>
+    <div id="footer-root"></div>
+    <div id="chatbot-root"></div>
+  </body>
+</html>

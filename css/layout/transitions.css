@@ -1,0 +1,47 @@
+.edge-arc {
+  overflow-x: clip;
+}
+.edge-arc::before {
+  content: "";
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  top: -1px;
+  height: 72px;
+  background: var(--edge, var(--color-paper));
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  pointer-events: none;
+}
+.panel {
+  position: relative;
+  width: calc(100% - var(--gutter) * 2);
+  max-width: 1520px;
+  margin-inline: auto;
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+}
+.dots {
+  position: absolute;
+  pointer-events: none;
+  background-image: url("../../assets/illustrations/dots.svg");
+  background-repeat: repeat;
+}
+.blob {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 58% 42% 55% 45% / 48% 56% 44% 52%;
+}
+.before-footer {
+  padding-bottom: calc(var(--space-24) + var(--space-12));
+}
+@media (max-width: 700px) {
+  .before-footer {
+    padding-bottom: calc(var(--space-16) + var(--space-12));
+  }
+  .edge-arc::before {
+    height: 40px;
+  }
+  .panel {
+    border-radius: var(--radius-lg);
+  }
+}

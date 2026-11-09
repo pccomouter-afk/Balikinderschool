@@ -1,0 +1,60 @@
+<div class="chat" id="chat">
+  <section
+    class="chat__panel"
+    id="chat-panel"
+    role="dialog"
+    aria-modal="false"
+    aria-labelledby="chat-title"
+    tabindex="-1"
+    hidden
+  >
+    <header class="chat__head">
+      <img
+        class="chat__logo"
+        src="assets/images/logo.jpg"
+        alt=""
+        width="40"
+        height="40"
+      />
+      <div class="chat__id">
+        <h2 id="chat-title"></h2>
+        <p id="chat-sub"></p>
+      </div>
+      <div class="chat__tools">
+        <button class="chat__tool" id="chat-reset" type="button"></button>
+        <button class="chat__tool" id="chat-close" type="button"></button>
+      </div>
+    </header>
+    <div
+      class="chat__log"
+      id="chat-log"
+      role="log"
+      aria-live="polite"
+      aria-relevant="additions"
+    ></div>
+    <form class="chat__form" id="chat-form" novalidate>
+      <label class="sr-only" id="chat-label" for="chat-input"></label>
+      <textarea
+        id="chat-input"
+        rows="1"
+        autocomplete="off"
+        enterkeyhint="send"
+        aria-describedby="chat-error chat-hint"
+      ></textarea>
+      <button class="chat__send" id="chat-send" type="submit" disabled></button>
+    </form>
+    <p class="chat__error" id="chat-error" role="alert" hidden></p>
+    <p class="chat__hint" id="chat-hint"></p>
+  </section>
+  <button
+    class="chat__toggle"
+    id="chat-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="chat-panel"
+  >
+    <span class="chat__toggle-icon chat__toggle-icon--open" aria-hidden="true"></span>
+    <span class="chat__toggle-icon chat__toggle-icon--close" aria-hidden="true"></span>
+    <span class="chat__toggle-label" id="chat-toggle-label"></span>
+  </button>
+</div>

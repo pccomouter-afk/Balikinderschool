@@ -1,0 +1,12 @@
+IMAGE SOURCES BGKS
+
+Foto stok: tidak ada.
+Foto dari Pexels atau Unsplash tidak diunduh pada pekerjaan ini karena lingkungan kerja tidak memiliki akses internet. Tidak ada nama file foto atau URL gambar eksternal yang ditambahkan ke proyek.
+
+Aset gambar yang dipakai (semua lokal, dokumentasi asli atau ilustrasi):
+- assets/images/logo.jpg: logo resmi BGKS, tidak diubah.
+- assets/illustrations/*.svg: ilustrasi konsep yang sudah ada di proyek. Bukan dokumentasi fasilitas atau kegiatan BGKS.
+
+Font:
+- Outfit (heading): assets/fonts/outfit-regular.woff dan outfit-bold.woff, subset Latin dari file TTF Outfit (https://fonts.google.com/specimen/Outfit). Lisensi SIL Open Font License 1.1, lihat assets/fonts/Outfit-OFL.txt.
+- DM Sans (body): assets/fonts/dmsans-var.woff, file bawaan proyek. File lisensi DM Sans belum disertakan karena tidak dapat diunduh dari lingkungan ini. Lisensinya SIL Open Font License 1.1 (https://fonts.google.com/specimen/DM+Sans) dan sebaiknya ditambahkan.

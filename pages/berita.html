@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Berita &amp; Kegiatan | Bali Global Kinder School</title>
+    <meta
+      name="description"
+      content="Artikel edukatif untuk orang tua tentang belajar, bermain, dan tumbuh kembang anak usia dini."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bali Global Kinder School" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:title"
+      content="Berita &amp; Kegiatan | Bali Global Kinder School"
+    />
+    <meta
+      property="og:description"
+      content="Artikel edukatif untuk orang tua tentang belajar, bermain, dan tumbuh kembang anak usia dini."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8EF" />
+    <script>
+      try {
+        if (!sessionStorage.getItem("bgks-intro-seen"))
+          document.documentElement.classList.add("has-intro", "intro-lock");
+      } catch (err) {}
+    </script>
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body data-page="berita">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <div id="navbar-root"></div>
+    <main id="konten">
+      <section class="news-hero" aria-labelledby="judul-halaman">
+        <div class="container news-hero__grid">
+          <div class="news-hero__copy">
+            <p class="eyebrow">Berita &amp; Kegiatan</p>
+            <h1 id="judul-halaman">
+              Bacaan untuk orang tua yang mendampingi anak.
+            </h1>
+          </div>
+          <div class="news-hero__side">
+            <p class="lead">
+              Panduan edukatif tentang belajar, bermain, dan tumbuh kembang anak
+              usia dini.
+            </p>
+            <p class="caption" id="news-note"></p>
+          </div>
+        </div>
+      </section>
+      <section class="news-featured" aria-label="Artikel unggulan">
+        <div class="container"><div id="news-featured"></div></div>
+      </section>
+      <section class="section" aria-labelledby="judul-semua">
+        <div class="container">
+          <div class="news-bar">
+            <h2 id="judul-semua">Artikel lainnya</h2>
+            <div
+              class="news-filters"
+              id="news-filters"
+              role="group"
+              aria-label="Filter kategori"
+            ></div>
+          </div>
+          <div class="news-tools">
+            <label class="sr-only" for="news-q">Cari artikel</label
+            ><input
+              id="news-q"
+              class="news-search"
+              type="search"
+              placeholder="Cari artikel"
+              autocomplete="off"
+            /><span class="caption" id="news-count" aria-live="polite"></span>
+          </div>
+          <ul class="news-grid" id="news-grid"></ul>
+          <div class="empty" id="news-empty" hidden>
+            <h3>Tidak ada artikel yang cocok.</h3>
+            <p class="muted">Coba kata kunci atau kategori lain.</p>
+            <button class="btn btn--ghost" type="button" id="news-reset">
+              Atur ulang filter
+            </button>
+          </div>
+          <div
+            class="news-pager"
+            id="news-pager"
+            role="group"
+            aria-label="Halaman"
+          ></div>
+        </div>
+      </section>
+      <section class="section--tight before-footer" aria-labelledby="judul-cta">
+        <div class="container cta" data-reveal>
+          <div>
+            <h2 id="judul-cta">Ada pertanyaan tentang sekolah?</h2>
+            <p>
+              Lihat alur pendaftaran, lalu sampaikan pertanyaanmu kepada pihak
+              sekolah.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--yellow" href="pendaftaran.html"
+              >Informasi Pendaftaran</a
+            ><a
+              class="btn btn--ghost-light"
+              data-wa
+              target="_blank"
+              rel="noopener"
+              hidden
+              >Chat WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-root"></div>
+    <div id="chatbot-root"></div>
+  </body>
+</html>

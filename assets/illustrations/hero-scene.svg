@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 780" width="720" height="780">
+<style>
+.cloud{animation:drift 9s ease-in-out infinite alternate}
+.cloud--b{animation-duration:12s;animation-delay:-4s}
+.cloud--c{animation-duration:10s;animation-delay:-7s}
+.plane{animation:glide 5.5s ease-in-out infinite alternate}
+.spark{transform-box:fill-box;transform-origin:center;animation:twinkle 3.2s ease-in-out infinite}
+.spark--b{animation-delay:-1.6s}
+.sun-halo{transform-box:fill-box;transform-origin:center;animation:halo 6s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(12px)}}
+@keyframes glide{from{transform:translate(0,0) rotate(-2deg)}to{transform:translate(8px,-10px) rotate(2deg)}}
+@keyframes twinkle{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.7);opacity:.6}}
+@keyframes halo{from{transform:scale(1)}to{transform:scale(1.08)}}
+@media (prefers-reduced-motion:reduce){.cloud,.plane,.spark,.sun-halo{animation:none}}
+</style>
+<defs>
+<clipPath id="win"><path d="M84 742V340A276 276 0 0 1 636 340V742Z"/></clipPath>
+<g id="tree">
+<ellipse cx="0" cy="36" rx="30" ry="7" fill="#203044" opacity=".12"/>
+<rect x="-5" y="4" width="10" height="34" rx="3" fill="#8A5F3E"/>
+<circle cx="0" cy="-8" r="40" fill="#4F7F3A"/>
+<circle cx="-3" cy="-12" r="36" fill="#75A85C"/>
+<circle cx="-17" cy="-24" r="13" fill="#93C27B"/>
+<circle cx="14" cy="-2" r="9" fill="#93C27B" opacity=".8"/>
+</g>
+<g id="flower">
+<rect x="-1.5" y="0" width="3" height="22" rx="1.5" fill="#4F7F3A"/>
+<circle cx="-7" cy="-2" r="6" fill="#E9816D"/><circle cx="7" cy="-2" r="6" fill="#E9816D"/><circle cx="0" cy="-9" r="6" fill="#E9816D"/><circle cx="0" cy="5" r="6" fill="#E9816D"/>
+<circle cx="0" cy="-2" r="4.5" fill="#F5CD4F"/>
+</g>
+<g id="cloud">
+<ellipse cx="0" cy="0" rx="58" ry="17" fill="#fff"/>
+<circle cx="-20" cy="-12" r="19" fill="#fff"/>
+<circle cx="8" cy="-20" r="25" fill="#fff"/>
+<circle cx="34" cy="-8" r="16" fill="#fff"/>
+</g>
+</defs>
+<ellipse cx="520" cy="380" rx="250" ry="330" transform="rotate(16 520 380)" fill="#FDF1C9"/>
+<circle cx="70" cy="676" r="76" fill="#FBE4DE"/>
+<circle cx="672" cy="96" r="34" fill="#D5EDF4"/>
+<path d="M60 742V340A300 300 0 0 1 660 340V742Z" fill="#1769C2"/>
+<path d="M84 742V340A276 276 0 0 1 636 340V742Z" fill="#E8F2FC"/>
+<g clip-path="url(#win)">
+<g class="ly" data-ly="sun">
+<circle class="sun-halo" cx="506" cy="196" r="68" fill="#FDF1C9"/>
+<circle cx="506" cy="196" r="46" fill="#F5CD4F"/>
+<g class="cloud"><use href="#cloud" x="176" y="196"/></g>
+<g class="cloud cloud--b"><use href="#cloud" x="566" y="452" transform="translate(0 0) scale(.8)"/></g>
+<g class="cloud cloud--c"><use href="#cloud" x="360" y="128" transform="scale(.6)"/></g>
+</g>
+<g class="ly" data-ly="rain" fill="none" stroke-width="26">
+<path d="M98 600A262 262 0 0 1 622 600" stroke="#E9816D"/>
+<path d="M126 600A234 234 0 0 1 594 600" stroke="#F5CD4F"/>
+<path d="M154 600A206 206 0 0 1 566 600" stroke="#75A85C"/>
+<path d="M182 600A178 178 0 0 1 538 600" stroke="#ABDCE9"/>
+<path d="M210 600A150 150 0 0 1 510 600" stroke="#1769C2"/>
+</g>
+<g class="ly" data-ly="far">
+<path d="M40 560L84 548C200 500 330 520 430 552S580 536 636 512L690 504V800H40Z" fill="#A9CE92"/>
+<use href="#tree" transform="translate(244 540) scale(.62)"/><use href="#tree" transform="translate(498 536) scale(.5)"/>
+</g>
+<g class="ly" data-ly="mid">
+<path d="M40 668L84 656C220 590 380 618 500 640S600 632 636 614L690 606V800H40Z" fill="#75A85C"/>
+<use href="#tree" transform="translate(166 612)"/>
+<use href="#tree" transform="translate(562 604)"/>
+</g>
+<g class="ly" data-ly="near">
+<path d="M300 742C328 706 334 676 350 650C358 636 364 628 368 624C372 620 378 620 382 624C388 632 396 646 406 664C424 696 440 718 484 742Z" fill="#F4E5CC"/>
+<path d="M40 710L84 706C260 676 460 676 636 706L690 710V800H40Z" fill="#4F7F3A"/>
+<use href="#flower" x="130" y="704"/>
+<use href="#flower" x="172" y="716" transform="translate(0 0)"/>
+<use href="#flower" x="566" y="708"/>
+<use href="#flower" x="606" y="722"/>
+<ellipse cx="360" cy="716" rx="116" ry="20" fill="#203044" opacity=".16"/>
+</g>
+</g>
+<rect x="40" y="730" width="640" height="28" rx="14" fill="#12477F"/>
+<g fill="none" stroke="#12477F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="plane">
+<path d="M52 118L130 82L104 140L94 118Z" fill="#fff"/>
+<path d="M94 118L130 82"/>
+<path d="M104 140L100 124"/>
+<path d="M44 150C24 160 36 184 18 192" stroke-dasharray="2 8"/>
+</g>
+<g fill="#F5CD4F">
+<path class="spark" d="M640 54L646 72L664 78L646 84L640 102L634 84L616 78L634 72Z"/>
+<path class="spark spark--b" d="M690 148L694 160L706 164L694 168L690 180L686 168L674 164L686 160Z"/>
+</g>
+<path d="M690 436c10-14 20 14 30 0s20 14 30 0" transform="translate(-60 0)" fill="none" stroke="#E9816D" stroke-width="6" stroke-linecap="round"/>
+<g fill="#12477F" opacity=".35">
+<circle cx="24" cy="560" r="3.5"/><circle cx="46" cy="560" r="3.5"/><circle cx="68" cy="560" r="3.5"/>
+<circle cx="24" cy="582" r="3.5"/><circle cx="46" cy="582" r="3.5"/><circle cx="68" cy="582" r="3.5"/>
+<circle cx="24" cy="604" r="3.5"/><circle cx="46" cy="604" r="3.5"/><circle cx="68" cy="604" r="3.5"/>
+</g>
+</svg>
