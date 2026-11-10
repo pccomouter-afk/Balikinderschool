@@ -1,0 +1,186 @@
+<svg class="lang__sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="flag-id" viewBox="0 0 60 40">
+    <rect width="60" height="20" fill="#ce1126" />
+    <rect y="20" width="60" height="20" fill="#fff" />
+  </symbol>
+  <symbol id="flag-en" viewBox="0 0 60 40">
+    <rect width="60" height="40" fill="#012169" />
+    <path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8" />
+    <path d="M0 0L60 40M60 0L0 40" stroke="#c8102e" stroke-width="3" />
+    <path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="13" />
+    <path d="M30 0V40M0 20H60" stroke="#c8102e" stroke-width="8" />
+  </symbol>
+</svg>
+<header class="nav" id="site-nav">
+  <a
+    class="nav__brand"
+    href="index.html"
+    aria-label="Bali Global Kinder School, beranda"
+    ><img src="assets/images/logo.jpg" alt="" width="44" height="44" /><span
+      >Bali Global<br />Kinder School</span
+    ></a
+  >
+  <nav class="nav__menu" id="nav-menu" aria-label="Navigasi utama">
+    <a class="nav__link" data-nav="index" href="index.html">Beranda</a>
+    <a class="nav__link" data-nav="tentang" href="pages/tentang.html"
+      >Tentang</a
+    >
+    <a
+      class="nav__link"
+      data-nav="program-belajar"
+      href="pages/program-belajar.html"
+      >Program</a
+    >
+    <div class="nav__drop" data-drop>
+      <button
+        class="nav__link nav__drop-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-sub"
+        aria-haspopup="true"
+      >
+        Jelajahi<svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+      <ul class="nav__sub" id="nav-sub">
+        <li>
+          <a data-nav="dunia-bermain" href="pages/dunia-bermain.html"
+            ><span class="nav__sub-t">Dunia Bermain</span
+            ><span class="nav__sub-d">Delapan permainan dan manfaatnya</span></a
+          >
+        </li>
+        <li>
+          <a data-nav="fasilitas" href="pages/fasilitas.html"
+            ><span class="nav__sub-t">Fasilitas</span
+            ><span class="nav__sub-d"
+              >Lingkungan belajar dan daftar kunjungan</span
+            ></a
+          >
+        </li>
+        <li>
+          <a data-nav="kehidupan-sekolah" href="pages/kehidupan-sekolah.html"
+            ><span class="nav__sub-t">Kehidupan Sekolah</span
+            ><span class="nav__sub-d">Gambaran keseharian anak</span></a
+          >
+        </li>
+        <li>
+          <a data-nav="faq" href="pages/faq.html"
+            ><span class="nav__sub-t">FAQ</span
+            ><span class="nav__sub-d">Pertanyaan yang sering muncul</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <a class="nav__link" data-nav="berita" href="pages/berita.html">Berita</a>
+    <a class="nav__link" data-nav="kontak" href="pages/kontak.html">Kontak</a>
+    <div class="lang" data-lang-root>
+      <button
+        class="lang__btn"
+        type="button"
+        aria-haspopup="menu"
+        aria-expanded="false"
+        aria-controls="lang-menu"
+        aria-label="Pilih bahasa"
+      >
+        <svg class="lang__flag" viewBox="0 0 60 40" aria-hidden="true">
+          <use data-lang-flag href="#flag-id" />
+        </svg>
+        <span class="lang__code" data-lang-code>ID</span>
+        <svg
+          class="lang__chev"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+      <ul class="lang__menu" id="lang-menu" role="menu" aria-label="Pilih bahasa">
+        <li role="none">
+          <button
+            class="lang__opt"
+            type="button"
+            role="menuitemradio"
+            aria-checked="true"
+            data-lang-set="id"
+            lang="id"
+          >
+            <svg class="lang__flag" viewBox="0 0 60 40" aria-hidden="true">
+              <use href="#flag-id" />
+            </svg>
+            <span class="lang__name" translate="no">Bahasa Indonesia</span>
+            <span class="lang__abbr">ID</span>
+            <svg
+              class="lang__tick"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg>
+          </button>
+        </li>
+        <li role="none">
+          <button
+            class="lang__opt"
+            type="button"
+            role="menuitemradio"
+            aria-checked="false"
+            data-lang-set="en"
+            lang="en"
+          >
+            <svg class="lang__flag" viewBox="0 0 60 40" aria-hidden="true">
+              <use href="#flag-en" />
+            </svg>
+            <span class="lang__name" translate="no">English</span>
+            <span class="lang__abbr">EN</span>
+            <svg
+              class="lang__tick"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <a
+      class="btn btn--primary btn--sm nav__cta"
+      data-nav="pendaftaran"
+      href="pages/pendaftaran.html"
+      >Info Pendaftaran</a
+    >
+  </nav>
+  <button
+    class="nav__toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="nav-menu"
+    aria-label="Buka menu"
+  >
+    <span></span><span></span><span></span>
+  </button>
+</header>

@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--color-blue-deep);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+}
+h4 {
+  font-size: 1.125rem;
+  font-weight: var(--fw-semibold);
+}
+p {
+  text-wrap: pretty;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-yellow);
+}
+.lead {
+  font-size: var(--fs-lead);
+  color: var(--color-ink-muted);
+  max-width: 52ch;
+  line-height: 1.6;
+}
+.muted {
+  color: var(--color-ink-muted);
+}
+.caption {
+  font-size: var(--fs-caption);
+  color: var(--color-ink-muted);
+}
+.section-head {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+.section-head h2 {
+  max-width: 20ch;
+}

@@ -1,0 +1,91 @@
+:root {
+  --color-paper: #fff8ef;
+  --color-white: #ffffff;
+  --color-ink: #203044;
+  --color-ink-muted: #5b6a7e;
+  --color-blue: #1769c2;
+  --color-blue-deep: #12477f;
+  --color-blue-soft: #e8f2fc;
+  --color-blue-pale: #f2f7fd;
+  --color-yellow: #f5cd4f;
+  --color-yellow-soft: #fdf1c9;
+  --color-yellow-deep: #b8890f;
+  --color-green: #75a85c;
+  --color-green-soft: #e3f0db;
+  --color-green-deep: #4f7f3a;
+  --color-coral: #e9816d;
+  --color-coral-soft: #fbe4de;
+  --color-coral-deep: #b9543f;
+  --color-sky: #abdce9;
+  --color-on-blue: #dbe8f6;
+  --color-yellow-hover: #ffe07a;
+  --color-coral-tint: #f6cfc5;
+  --color-yellow-tint: #fae29a;
+  --color-green-tint: #c9e2bc;
+  --color-blue-tint: #cfe3f7;
+  --color-line: #e7e2d9;
+  --color-surface: #ffffff;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fs-h1: clamp(2.375rem, 1.5rem + 3.6vw, 4.75rem);
+  --fs-h2: clamp(1.75rem, 1.1rem + 2vw, 3rem);
+  --fs-h3: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem);
+  --fs-body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --fs-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --fs-nav: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --fs-caption: clamp(0.8125rem, 0.8rem + 0.08vw, 0.875rem);
+  --fs-display: clamp(3rem, 2rem + 6vw, 6.5rem);
+  --lh-tight: 1.1;
+  --lh-body: 1.65;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-5: 1.25rem;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+  --container: 1240px;
+  --gutter: 24px;
+  --nav-width: calc(100vw - 48px);
+  --nav-height: 72px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-xl: 48px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 6px 20px rgba(32, 48, 68, 0.08);
+  --shadow-lift: 0 16px 40px rgba(32, 48, 68, 0.12);
+  --shadow-nav: 0 8px 24px rgba(32, 48, 68, 0.1);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-snap: cubic-bezier(0.3, 1.35, 0.5, 1);
+  --dur-fast: 0.18s;
+  --dur: 0.28s;
+  --dur-slow: 0.45s;
+  --dur-hover: 0.22s;
+  --dur-scene: 0.7s;
+  --shadow-card:
+    0 1px 0 rgba(32, 48, 68, 0.04), 0 10px 28px -16px rgba(32, 48, 68, 0.22);
+  --shadow-card-hover:
+    0 2px 0 rgba(32, 48, 68, 0.04), 0 26px 46px -20px rgba(32, 48, 68, 0.32);
+  --lift: -4px;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-nav: 100;
+  --z-chat: 110;
+  --z-skip: 200;
+}
+@media (max-width: 600px) {
+  :root {
+    --gutter: 16px;
+  }
+}

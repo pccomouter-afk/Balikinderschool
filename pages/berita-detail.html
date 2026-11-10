@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artikel | Bali Global Kinder School</title>
+    <meta
+      name="description"
+      content="Artikel edukatif untuk orang tua dari Bali Global Kinder School."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bali Global Kinder School" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="Artikel | Bali Global Kinder School" />
+    <meta
+      property="og:description"
+      content="Artikel edukatif untuk orang tua dari Bali Global Kinder School."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8EF" />
+    <script>
+      try {
+        if (!sessionStorage.getItem("bgks-intro-seen"))
+          document.documentElement.classList.add("has-intro", "intro-lock");
+      } catch (err) {}
+    </script>
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body data-page="berita-detail">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <div id="navbar-root"></div>
+    <main id="konten">
+      <section class="art page-top" aria-label="Artikel">
+        <div class="container">
+          <nav class="crumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="../index.html">Beranda</a></li>
+              <li><a href="berita.html">Berita &amp; Kegiatan</a></li>
+              <li aria-current="page" id="crumb-current">Artikel</li>
+            </ol>
+          </nav>
+          <div id="article-root"></div>
+          <p class="art__back">
+            <a class="link-go link-go--back" href="berita.html"
+              >Kembali ke daftar berita</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="section--tight before-footer" aria-labelledby="judul-cta">
+        <div class="container cta" data-reveal>
+          <div>
+            <h2 id="judul-cta">Ada pertanyaan tentang sekolah?</h2>
+            <p>
+              Lihat alur pendaftaran, lalu sampaikan pertanyaanmu kepada pihak
+              sekolah.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--yellow" href="pendaftaran.html"
+              >Informasi Pendaftaran</a
+            ><a
+              class="btn btn--ghost-light"
+              data-wa
+              target="_blank"
+              rel="noopener"
+              hidden
+              >Chat WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-root"></div>
+    <div id="chatbot-root"></div>
+  </body>
+</html>
